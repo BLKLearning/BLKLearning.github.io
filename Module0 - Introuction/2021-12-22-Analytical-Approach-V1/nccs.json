@@ -1,0 +1,126 @@
+{
+    "en":{
+        "TOC":"Table of Contents",
+        "title":"Analytical Approach",
+        
+        "Resources-1":"Relevant Resources",
+        "Resources-3":"COVID-19 Main Page",
+        "Resources-4":"COVID-19 Outbreak Update",
+        "Resources-5":"Current Orders and Regulations implemented for COVID-19",
+        "Resources-7":"Handout for Symptomatic Travellers arriving in Canada ",
+        "Resources-8":"Handout for unvaccinated Asymptomatic Travellers arriving in Canada ",
+        "Resources-9":"Handout for Essential Workers",
+        "Resources-10":"Handout for Fully Vaccinated Travellers without symptoms",
+        "Resources-11":"Handout for unvaccinated children under 12 without symptoms",
+        "Resources-12":"Handout for travellers medically exempt from receiving a vaccination",
+       
+        "help-1":"Course Navigation",
+        "help-2":"Throughout the course, you can use several navigation features and functions.",
+        "help-3":"View the previous page.",
+        "help-4":"View the next page.",
+        "help-5":"Open to access help",
+        "help-6":"Open to view the table of contents.",
+
+        "skip":"Skip to main content.",
+        
+        "Title-1":"Introduction",
+        "1-1":"The purpose of the Analytical Approach is to assist countries or regions build, modernize, or strengthen their national or regional biosafety and biosecurity systems to mitigate the risks of a natural, accidental or deliberate release of biological agents. A complete biosafety and biosecurity system encompasses a legal structure that provides a mandate for an oversight program, along with a policy framework, education and training, and a culture of responsible conduct.",
+        "1-2":"The Analytical Approach:",
+        "1-3":"Is a modular and scalable policy analysis tool with a biosafety and biosecurity context",
+        "1-4":"Provides a structure for critical thinking that assists with defining country or region-specific issues and identifying feasible policy solutions to root causes",
+        "1-5":"Supports risk management for moderate and high-risk pathogens and toxins using safety and security lenses",
+        "1-6":"Includes practical guidance, an overview of common policy instruments, and options for combining them into a national program",
+        "1-7":"Assists officials to identify and prepare sound recommendations to decision-makers or donors",
+        "1-8":"Throughout, the Analytical Approach stresses the importance of outreach and engagement in an effort to get to know the various people and stakeholders that are implicated and including them in solutions, with a view to sustainability.",
+        "1-9":"The objective of any policy is to create a change in behaviour among a target population, and the Analytical Approach provides a process to identify the desired behavioural change and the tools to bring it about.",
+        
+        
+        "Title-2":"Modules",
+        "2-1":"This course contains 9 modules and a final quiz. Each module is designed to be flexible and modular to enable countries or regions to enter the methodology at different points depending on their current state.",
+        "2-2":"Module 1: Identify the Current Situation",
+        "2-3":"This module explains how to develop a picture of where, how, and who are using pathogens in your country or region, and what controls exist.",
+        "2-4":"Module 2: Issue Identification, Risk Assessment, and Prioritization",
+        "2-5":"This module explains how to go about the analysis of the situation and regulations in place – what works well, what does not work, who contributes to the issues, and where action needs to be taken.",
+        "2-6":"Module 3: Scope and Objectives for New System Components",
+        "2-7":"This module explains how to make choices on what risks to address, how much impact the national biosafety and biosecurity system will have, and by when.",
+        "2-8":"Module 4: Policy Instruments",
+        "2-9":"This module provides an exploration of policy instruments, their pros and cons.",
+        "2-10":"Module 5: Combine Policy Instruments into National System Options",
+        "2-11":"This module explains how to combine policy instruments into coherent national oversight system options.",
+        "2-12":"Module 6: Implementation Approach",
+        "2-13":"This module provides considerations on how your framework might be set up in your country/region and the role that senior decision-makers have in this process.",
+        "2-14":"Module 7: Performance Measurement and Evaluation",
+        "2-15":"This module explains how you can assess the impact of your final framework.",
+        "2-16":"Module 8: Stakeholder Engagement",
+        "2-17":"This module explains how you can consult with those who will be impacted by your framework to increase the chances that what you develop will be realistic, practical, and accepted.",
+        "2-18":"Module 9: International Comparison",
+        "2-19":"This module explains how to identify frameworks already in place that may work in your country/region (e.g., for ideas and to assess draft framework)."
+
+
+
+
+    },
+    "fr":{
+        
+        "TOC":"Table des matières",
+        "title":"Mesures aux Frontières",
+
+        "Resources-1":"Ressources Pertinentes",
+        "Resources-3":"COVID-19 Page d'Accueil",
+        "Resources-4":"COVID-19 Mise à jour sur l’éclosion",
+        "Resources-5":"Ordonnances et Règlement actuelles mis en œuvre pour COVID-19",
+        "Resources-7":"Document pour les Voyageurs Symptomatiques arrivant au Canada",
+        "Resources-8":"Document pour les Voyageurs Non Vaccinés arrivant au Canada",
+        "Resources-9":"Document pour les Travailleurs Essentiels",
+        "Resources-10":"Document pour les Voyageurs Entièrement Vaccinés sans Symptômes",
+        "Resources-11":"Document pour les Enfants Non Vaccinés de Moins de 12 ans ",
+        "Resources-12":"Document pour les Voyageurs qui sont Exemptés de Vaccination",
+
+        "help-1":"Navigation dans le cours",
+        "help-2":"Tout au long du cours, vous pouvez utiliser plusieurs caractéristiques et fonctions de navigation.",
+        "help-3":"Voir la page précédente.",
+        "help-4":"Voir la page suivante.",
+        "help-5":"Ouvrir pour voir le menu d'aide",
+        "help-6":"Ouvrir pour voir la table des matières.",
+        
+        "skip":"Sauter au contenu principal.",
+
+        "Title-1":"Introduction",
+        "1-1":"L’Approche analytique vise à aider les pays et régions à mettre en place, moderniser ou renforcer leurs systèmes nationaux ou régionaux de biosécurité et de biosûreté pour atténuer les risques de libération naturelle, accidentelle ou intentionnelle d’agents biologiques. Un système complet de biosécurité et de biosûreté comprend à la fois une structure juridique qui prévoit un mandat pour un programme de surveillance, un cadre stratégique, de l'éducation et de la formation,et une culture de conduite responsable.",
+        "1-2":"L’Approche analytique:",
+        "1-3":"est un outil modulaire et évolutif d’analyse de politique dans le contexte de la biosécurité et de la biosûreté;",
+        "1-4":"fournit une structure de réflexion critique qui aide à définir les questions propres à un pays ou une région et à trouver des solutions stratégiques réalisables pour s'attaquer aux causes fondamentales;",
+        "1-5":"appuie la gestion du risque pour les agents pathogènes et les toxines à risque modéré et élevé en utilisant l’angle de la sécurité et de la sûreté;",
+        "1-6":"comprend des conseils pratiques, un aperçu des instruments de politique communs et des options pour les combiner en un programme national;",
+        "1-7":"aide les fonctionnaires à cerner et à préparer des recommandations judicieuses à l'intention des décideurs ou des donateurs.",
+        "1-8":"Tout au long du processus, l'Approche analytique met l'accent sur l'importance de la sensibilisation et de la mobilisation dans un effort visant à connaître les diverses personnes et intervenants impliquées et à les inclure dans les solutions, en tenant compte de la durabilité.",
+        "1-9":"L'objectif de toute politique est de créer un changement de comportement au sein d'une population cible, et l'Approche analytique fournit un processus pour cerner le changement de comportement souhaité et les outils pour y parvenir.",
+        
+        
+        "Title-2":"Modules",
+        "2-1":"Ce cours comprend neuf modules et un questionnaire final. Chaque module est conçu pour être flexible et modulaire afin de permettre aux pays ou régions d'entrer dans la méthodologie à différents moments, selon leur état actuel.",
+        "2-2":"Module 1: Comprendre la situation actuelle",
+        "2-3":"Ce module explique comment se faire une idée de comment et qui utilise des agents pathogènes dans votre pays ou région, où sont-ils utilisés et quels contrôles existent.",
+        "2-4":"Module 2: ",
+        "2-5":"This module explains how to go about the analysis of the situation and regulations in place – what works well, what does not work, who contributes to the issues, and where action needs to be taken.",
+        "2-6":"Module 3: Scope and Objectives for New System Components",
+        "2-7":"This module explains how to make choices on what risks to address, how much impact the national biosafety and biosecurity system will have, and by when.",
+        "2-8":"Module 4: Policy Instruments",
+        "2-9":"This module provides an exploration of policy instruments, their pros and cons.",
+        "2-10":"Module 5: Combine Policy Instruments into National System Options",
+        "2-11":"This module explains how to combine policy instruments into coherent national oversight system options.",
+        "2-12":"Module 6: Implementation Approach",
+        "2-13":"This module provides considerations on how your framework might be set up in your country/region and the role that senior decision-makers have in this process.",
+        "2-14":"Module 7: Performance Measurement and Evaluation",
+        "2-15":"This module explains how you can assess the impact of your final framework.",
+        "2-16":"Module 8: Stakeholder Engagement",
+        "2-17":"This module explains how you can consult with those who will be impacted by your framework to increase the chances that what you develop will be realistic, practical, and accepted.",
+        "2-18":"Module 9: International Comparison",
+        "2-19":"This module explains how to identify frameworks already in place that may work in your country/region (e.g., for ideas and to assess draft framework)."
+
+        
+        
+        
+
+    }
+}
