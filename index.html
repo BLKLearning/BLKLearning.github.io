@@ -1,492 +1,690 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-    <head>
-        <meta charset="utf-8">
-        <title>Analytical Approach</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <head>
+    <meta charset="utf-8" />
+    <title class="lang" data-localize="title">Analytical Approach</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
-    
-        
-        
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.localize.js"></script>
+    <script src="./assets/js/jquery-ui.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
 
-        <script src="./assets/js/jquery.min.js"></script>
-        <script src="./assets/js/jquery.localize.js"></script>
-        <script src="./assets/js/jquery-ui.js"></script>
-        <script src="./assets/js/jquery-ui.min.js"></script>
+    <script>
+      document.addEventListener("uiupdate", function (evt) {
+        var id = evt.detail.currentId;
+        var str = id === "page00" ? "false" : "true";
 
-        <script>
-            document.addEventListener( 'uiupdate', function ( evt ) {
-              var id = evt.detail.currentId;
-              var str = ( id === 'page00' ) ? 'false' : 'true';
-          
-              document.querySelector('body').setAttribute( 'data-ui', str );
-              
-            })
-          </script>
+        document.querySelector("body").setAttribute("data-ui", str);
+      });
+    </script>
 
-          <!-- Translation script -->
+    <!-- Translation script -->
 
-          <script> 
-              $(function() { 
-                  "use strict"; 
-                  $.getJSON("nccs.json", function(arrLang) { 
-                      console.log(arrLang); 
-                      $(function() { 
-                        $(".translate").click(function() { 
-                          var lang = $(this).attr("id"); 
-                          $(".lang").each(function() { 
-                            $(this).html(arrLang[lang][$(this).attr("data-localize")]); 
-                          }); 
-                          var image = $(this).attr("id");
-                          $(".image").each(function() {
-                            $(this).html(arrLang[lang][$(this).attr("data-localize")]); 
-                          });
-                          var aria = $(this).attr("id");
-                          $(".aria").each(function() {
-                            $(this).html(arrLang[lang][$(this).attr("data-localize")]); 
-                          });
-                          var video = $(this).attr("id");
-                          $(".video").each(function() {
-                            $(this).html(arrLang[lang][$(this).attr("data-localize")]);
-                          });
-                          }); 
-                        }); 
-                      }); 
-                    }); 
-            </script> 
-        
-       <script>
-  document.addEventListener( 'uiupdate', function ( evt ) {
-    var id = evt.detail.currentId;
-    var str = ( id === 'page00' ) ? 'false' : 'true';
+    <script>
+      $(function () {
+        "use strict";
+        $.getJSON("nccs.json", function (arrLang) {
+          console.log(arrLang);
+          $(function () {
+            $(".translate").click(function () {
+              var lang = $(this).attr("id");
+              $(".lang").each(function () {
+                $(this).html(arrLang[lang][$(this).attr("data-localize")]);
+              });
+              var image = $(this).attr("id");
+              $(".image").each(function () {
+                $(this).html(arrLang[lang][$(this).attr("data-localize")]);
+              });
+              var aria = $(this).attr("id");
+              $(".aria").each(function () {
+                $(this).html(arrLang[lang][$(this).attr("data-localize")]);
+              });
+              var video = $(this).attr("id");
+              $(".video").each(function () {
+                $(this).html(arrLang[lang][$(this).attr("data-localize")]);
+              });
+            });
+          });
+        });
+      });
+    </script>
 
-    document.querySelector('body').setAttribute( 'data-ui', str );
-    
-  })
-</script>
+    <script>
+      document.addEventListener("uiupdate", function (evt) {
+        var id = evt.detail.currentId;
+        var str = id === "page00" ? "false" : "true";
 
-
-         
-
-
-        
-    </head>
+        document.querySelector("body").setAttribute("data-ui", str);
+      });
+    </script>
+  </head>
 
   <body hidden data-sidebar-visible="true" data-ui="false">
-      <div class="ui">
-        <header> 
+    <div class="ui">
+      <header>
         <!-- Splash Page -->
- 
-   <section id="page00" class="page splash" hidden="true" data-page>
-    <div style="background-image: url('.assets/img/template/phac-brand-cover.svg')" class="max-w-lg mt-6 md:mt-20 mx-auto border bg-white accent-top">
-    <div class="px-4 pt-4">
-      <img src="assets/img/template/phac-aspc-eng.svg" width="274px" height="23px"/>
-    
-  
-    <span class="block">
-      <div class="text-center text-xl pt-6">
-        Analytical Approach
 
-      </div> 
-      <hr class="w-4/5 mx-auto my-2"> 
-      <div class="text-center text-xl">
-        Approche Analytique
-      </div>
-    </span>
+        <section id="page00" class="page splash" hidden="true" data-page>
+          <div
+            style="
+              background-image: url('.assets/img/template/phac-brand-cover.svg');
+            "
+            class="max-w-lg mt-6 md:mt-20 mx-auto border bg-white accent-top"
+          >
+            <div class="px-4 pt-4">
+              <img
+                src="assets/img/template/phac-aspc-eng.svg"
+                width="274px"
+                height="23px"
+              />
 
-        </div>
-        
-          <div class="flex justify-around p-6">
-            <a href="#page01" class="translate button button--primary w-32" id="en">English</a>
-            <a href="#page01" class="translate button button--primary w-32" id="fr">Français</a>
-          </div>
-          <div class="flex p-3 bg-primary text-white">
-          <div class="text-xs pr-2 w-1/2 border-r">
-            Designed and Developed by <br> 
-            Biosafety Learning and Knowledge Team
-          </div>
-          <div class="text-xs pl-2 w-1/2 text-right" lang="fr-CA">
-            Conçu et développé par
-            <br>
-            Équipe chargée de l’apprentissage et des connaissances en matière de biosécurité
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Splash Page-->
+              <span class="block">
+                <div class="text-center text-xl pt-6">Analytical Approach</div>
+                <hr class="w-4/5 mx-auto my-2" />
+                <div class="text-center text-xl">Approche Analytique</div>
+              </span>
+            </div>
 
-    <!-- Header bar -->
-    <div class="ui__header bg-primary text-white">
-        <div class="flex">
-          <img src="./assets/img/logo-flag.svg" alt="" class="mx-2">
-          <div data-localize="titlebarimage1" class="image">
-            <img src="./assets/img/template/phac-text-en.svg">
+            <div class="flex justify-around p-6">
+              <a
+                href="#page01"
+                class="translate button button--primary w-32"
+                id="en"
+                >English</a
+              >
+              <a
+                href="#page01"
+                class="translate button button--primary w-32"
+                id="fr"
+                >Français</a
+              >
+            </div>
+            <div class="flex p-3 bg-primary text-white">
+              <div class="text-xs pr-2 w-1/2 border-r">
+                Designed and Developed by <br />
+                Biosafety Learning and Knowledge Team
+              </div>
+              <div class="text-xs pl-2 w-1/2 text-right" lang="fr-CA">
+                Conçu et développé par
+                <br />
+                Équipe chargée de l’apprentissage et des connaissances en
+                matière de biosécurité
+              </div>
+            </div>
           </div>
-        </div>
-       
-        <div class="flex">
+        </section>
+        <!-- End Splash Page-->
 
-    <!-- Language buttons -->
-          <button style="margin-right:25px" class="translate" id="en">English</button>
-          <button style="margin-right:20px" class="translate" id="fr">Français</button>      
-
-    <!-- Resources button -->
-    <button style="margin-right:20px" data-modal-show="modal-02">
-      <img src="./assets/img/noun_Folder_2349104.png" width="50" height="50">
-          </button>
-    <div id="modal-02" class="modal rounded-lg" data-modal>
-      <div data-localize="Resources">
-        <h2 class="lang" data-localize="Resources-1"> Relevant Resources</h2>  
-        <p></p>
-        <div class="wrap">
-          <div class="m1-4">
-            <a class="btnX lang" target="_blank" href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html" data-localize="Resources-3" >COVID-19 Main Page</a>
-            <br>
-            <br>
-          </div>
-        
-          <div class="m1-4">
-            <a class="btnX lang" target="_blank" href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html?topic=tilelink" data-localize="Resources-4">COVID-19 Outbreak Update</a>
-            <br>
-            <br>
+        <!-- Header bar -->
+        <div class="ui__header bg-primary text-white">
+          <div class="flex">
+            <img src="./assets/img/logo-flag.svg" alt="" class="mx-2" />
+            <div data-localize="titlebarimage1" class="image">
+              <img src="./assets/img/template/phac-text-en.svg" />
+            </div>
           </div>
 
-          <div class="m1-4">
-            <a class="btnX lang" target="_blank" href="https://www.justice.gc.ca/eng/csj-sjc/covid.html" data-localize="Resources-5">Current Orders and Regulations implemented for COVID-19</a>
-            <br>
-            <br>
-          </div>
-
-          <div class="m1-4">
-            <a class="btnX lang" target="_blank" href="https://www.canada.ca/en/public-health/services/publications/diseases-conditions/travellers-with-symptoms-return-canada.html" data-localize="Resources-7">Handout for Symptomatic Travellers arriving in Canada</a>
-            <br>
-            <br>
-          </div>
-
-          <div class="m1-4">
-            <a class="btnX lang" target="_blank"href="https://www.canada.ca/en/public-health/services/publications/diseases-conditions/2019-novel-coronavirus-information-sheet.html" data-localize="Resources-8">Handout for unvaccinated Asymptomatic Travellers arriving in Canada </a>
-            <br>
-            <br>
-          </div>
-
-          <div class="m1-4">
-            <a class="btnX lang" target="_blank" href="https://www.canada.ca/en/public-health/services/publications/diseases-conditions/covid-19-information-essential-service-workers.html" data-localize="Resources-9">Handout for Essential Workers </a>
-            <br>
-            <br>
-          </div>
-
-          <div class="m1-4">
-            <a class="btnX lang" target="_blank" href="https://www.canada.ca/en/public-health/services/publications/diseases-conditions/fully-vaccinated-travellers-without-covid-19-symptoms-returning-canada.html" data-localize="Resources-10">Handout for Fully Vaccinated Travellers without symptoms</a>
-            <br>
-            <br>
-          </div>
-
-          <div class="m1-4">
-            <a class="btnX lang" target="_blank" href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/awareness-resources/unvaccinated-children-under-12-without-symptoms-travelling-fully-vaccinated-parents-guardians.html" data-localize="Resources-11">Handout for unvaccinated children under 12 without symptoms </a>
-            <br>
-            <br>
-          </div>
-
-          <div class="m1-4">
-            <a class="btnX lang" target="_blank" href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/awareness-resources/travellers-over-12-without-symptoms-medically-exempt-vaccination.html" data-localize="Resources-12">Handout for travellers medically exempt from receiving a vaccination </a>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-
-    <!-- Help buttons -->
-    
-    <button data-modal-show="modal-01">
-        <img src="./assets/img/template/HelpButton.png" width="50" height="50">
+          <div class="flex">
+            <!-- Language buttons -->
+            <button style="margin-right: 25px" class="translate" id="en">
+              English
             </button>
-            
-        <div id="modal-01" class="modal rounded-lg" data-modal>
-            <div data-localize="help">
-              <h2 class="lang" data-localize="help-1">Course Navigation</h2>
-            <p class="lang" data-localize="help-2">Throughout the course, you can use several navigation features and functions.</p>
-            <p></p>
- 	           <div class="flex flex-row">
-                <div class="flex items-center">       
-                  <div data-localize="helpimage-1" class="image flex items-center flex-shrink w-10 h-10">
-                    <img src='./assets/img/template/Help_LeftArrow.png' alt='Previous Page'/>
+            <button style="margin-right: 20px" class="translate" id="fr">
+              Français
+            </button>
+
+            <!-- Resources button -->
+            <button style="margin-right: 20px" data-modal-show="modal-02">
+              <img
+                src="./assets/img/noun_Folder_2349104.png"
+                width="50"
+                height="50"
+              />
+            </button>
+            <div id="modal-02" class="modal rounded-lg" data-modal>
+              <div data-localize="Resources">
+                <h2 class="lang" data-localize="Resources-1">
+                  Relevant Resources
+                </h2>
+                <p></p>
+                <div class="wrap">
+                  <div class="m1-4">
+                    <a
+                      class="btnX lang"
+                      target="_blank"
+                      href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html"
+                      data-localize="Resources-3"
+                      >COVID-19 Main Page</a
+                    >
+                    <br />
+                    <br />
                   </div>
-                  <div class="ml-4">
-                    <div class="lang" data-localize="help-3">View the previous page.</div>
+
+                  <div class="m1-4">
+                    <a
+                      class="btnX lang"
+                      target="_blank"
+                      href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html?topic=tilelink"
+                      data-localize="Resources-4"
+                      >COVID-19 Outbreak Update</a
+                    >
+                    <br />
+                    <br />
+                  </div>
+
+                  <div class="m1-4">
+                    <a
+                      class="btnX lang"
+                      target="_blank"
+                      href="https://www.justice.gc.ca/eng/csj-sjc/covid.html"
+                      data-localize="Resources-5"
+                      >Current Orders and Regulations implemented for
+                      COVID-19</a
+                    >
+                    <br />
+                    <br />
+                  </div>
+
+                  <div class="m1-4">
+                    <a
+                      class="btnX lang"
+                      target="_blank"
+                      href="https://www.canada.ca/en/public-health/services/publications/diseases-conditions/travellers-with-symptoms-return-canada.html"
+                      data-localize="Resources-7"
+                      >Handout for Symptomatic Travellers arriving in Canada</a
+                    >
+                    <br />
+                    <br />
+                  </div>
+
+                  <div class="m1-4">
+                    <a
+                      class="btnX lang"
+                      target="_blank"
+                      href="https://www.canada.ca/en/public-health/services/publications/diseases-conditions/2019-novel-coronavirus-information-sheet.html"
+                      data-localize="Resources-8"
+                      >Handout for unvaccinated Asymptomatic Travellers arriving
+                      in Canada
+                    </a>
+                    <br />
+                    <br />
+                  </div>
+
+                  <div class="m1-4">
+                    <a
+                      class="btnX lang"
+                      target="_blank"
+                      href="https://www.canada.ca/en/public-health/services/publications/diseases-conditions/covid-19-information-essential-service-workers.html"
+                      data-localize="Resources-9"
+                      >Handout for Essential Workers
+                    </a>
+                    <br />
+                    <br />
+                  </div>
+
+                  <div class="m1-4">
+                    <a
+                      class="btnX lang"
+                      target="_blank"
+                      href="https://www.canada.ca/en/public-health/services/publications/diseases-conditions/fully-vaccinated-travellers-without-covid-19-symptoms-returning-canada.html"
+                      data-localize="Resources-10"
+                      >Handout for Fully Vaccinated Travellers without
+                      symptoms</a
+                    >
+                    <br />
+                    <br />
+                  </div>
+
+                  <div class="m1-4">
+                    <a
+                      class="btnX lang"
+                      target="_blank"
+                      href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/awareness-resources/unvaccinated-children-under-12-without-symptoms-travelling-fully-vaccinated-parents-guardians.html"
+                      data-localize="Resources-11"
+                      >Handout for unvaccinated children under 12 without
+                      symptoms
+                    </a>
+                    <br />
+                    <br />
+                  </div>
+
+                  <div class="m1-4">
+                    <a
+                      class="btnX lang"
+                      target="_blank"
+                      href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/awareness-resources/travellers-over-12-without-symptoms-medically-exempt-vaccination.html"
+                      data-localize="Resources-12"
+                      >Handout for travellers medically exempt from receiving a
+                      vaccination
+                    </a>
                   </div>
                 </div>
+              </div>
             </div>
-            <p></p>
+
+            <!-- Help buttons -->
+
+            <button data-modal-show="modal-01">
+              <img
+                src="./assets/img/template/HelpButton.png"
+                width="50"
+                height="50"
+              />
+            </button>
+
+            <div id="modal-01" class="modal rounded-lg" data-modal>
+              <div data-localize="help">
+                <h2 class="lang" data-localize="help-1">Course Navigation</h2>
+                <p class="lang" data-localize="help-2">
+                  Throughout the course, you can use several navigation features
+                  and functions.
+                </p>
+                <p></p>
+                <div class="flex flex-row">
+                  <div class="flex items-center">
+                    <div
+                      data-localize="helpimage-1"
+                      class="image flex items-center flex-shrink w-10 h-10"
+                    >
+                      <img
+                        src="./assets/img/template/Help_LeftArrow.png"
+                        alt="Previous Page"
+                      />
+                    </div>
+                    <div class="ml-4">
+                      <div class="lang" data-localize="help-3">
+                        View the previous page.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p></p>
+                <div class="flex flex-row">
+                  <div class="flex items-center">
+                    <div
+                      data-localize="helpimage-2"
+                      class="image flex items-center flex-shrink w-10 h-10"
+                    >
+                      <img
+                        src="./assets/img/template/Help_RightArrow.png"
+                        alt="Next Page"
+                      />
+                    </div>
+                    <div class="ml-4">
+                      <div class="lang" data-localize="help-4">
+                        View the next page.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p></p>
+
               <div class="flex flex-row">
                 <div class="flex items-center">
-                  <div data-localize="helpimage-2" class="image flex items-center flex-shrink w-10 h-10">
-                    <img src='./assets/img/template/Help_RightArrow.png' alt='Next Page'/>
+                  <div
+                    data-localize="helpimage-4"
+                    class="image flex items-center flex-shrink w-10 h-10"
+                  >
+                    <img
+                      src="./assets/img/template/HelpButton_INV.png"
+                      alt="Get help"
+                    />
                   </div>
-                  <div class="ml-4">   
-                    <div class="lang" data-localize="help-4">View the next page.</div>
+                  <div class="ml-4">
+                    <div class="lang" data-localize="help-5">
+                      Open to access Help.
+                    </div>
                   </div>
                 </div>
               </div>
-           </div>
-          <p></p>
 
-           <div class="flex flex-row">
-              <div class="flex items-center">
-                <div data-localize="helpimage-4" class="image flex items-center flex-shrink w-10 h-10">
-                  <img src='./assets/img/template/HelpButton_INV.png' alt='Get help'/>
-                </div>
-                <div class="ml-4">
-                  <div class="lang" data-localize="help-5" >Open to access Help.</div>
+              <p></p>
+              <div class="flex flex-row">
+                <div class="flex items-center">
+                  <div
+                    data-localize="helpimage-5"
+                    class="image flex items-center flex-shrink w-10 h-10"
+                  >
+                    <img
+                      src="./assets/img/template/Help_TOC.png"
+                      alt="Open the table of contents"
+                    />
+                  </div>
+                  <div class="ml-4">
+                    <div class="lang" data-localize="help-6">
+                      Open to view the table of contents.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-          <p></p>
-          <div class="flex flex-row">
-            <div class="flex items-center">
-              <div data-localize="helpimage-5" class="image flex items-center flex-shrink w-10 h-10">
-                <img src='./assets/img/template/Help_TOC.png' alt='Open the table of contents'/>
-              </div>
-              <div class="ml-4">
-                <div class="lang" data-localize="help-6">Open to view the table of contents.</div>
-              </div>
-            </div>
+            <!-- TOC Control to toggle based on screen size -->
+            <button
+              id="toc-toggle"
+              class="icon-button toc-toggle"
+              aria-expanded="false"
+              aria-controls="toc"
+            >
+              <svg aria-hidden="true">
+                <use xlink:href="#icon-toc" />
+              </svg>
+              <span class="visually-hidden">Table of Contents Toggle</span>
+            </button>
           </div>
         </div>
-
-    
-
-     <!-- TOC Control to toggle based on screen size -->
-          <button id="toc-toggle" class="icon-button toc-toggle" aria-expanded="false" aria-controls="toc">
-            <svg aria-hidden="true">
-              <use xlink:href="#icon-toc"/>
-            </svg>
-            <span class="visually-hidden">Table of Contents Toggle</span>
-          </button>
-        </div>
-      </div>
-      <h1 class="visually-hidden">Analytical Approach</h1>
-    </header>
+        <h1 class="visually-hidden">Analytical Approach</h1>
+      </header>
 
       <main id="main" class="ui__main" tabindex="-1">
         <div class="toc-container">
           <nav id="toc" class="toc" data-toc>
-            <h2 class="text-center text-xl tocTitle lang" data-localize="TOC">Table of Contents</h2>
+            <h2 class="text-center text-xl tocTitle lang" data-localize="TOC">
+              Table of Contents
+            </h2>
           </nav>
         </div>
 
-  
         <div class="page-container">
           <!-- Slide 1 - Introduction -->
-            <section id="page01" class="page" tabindex="-1" data-page>
-                        
+          <section id="page01" class="page" tabindex="-1" data-page>
             <h2 class="lang" data-localize="Title-1">Introduction</h2>
-            <p class="lang" id="main" data-localize="1-1">The purpose of the Analytical Approach is to assist countries or regions build, modernize, or strengthen their national or regional biosafety and biosecurity systems to mitigate the risks of a natural, accidental or deliberate release of biological agents. A complete biosafety and biosecurity system encompasses a legal structure that provides a mandate for an oversight program, along with a policy framework, education and training, and a culture of responsible conduct.</p>
+            <p class="lang" id="main" data-localize="1-1">
+              The purpose of the Analytical Approach is to assist countries or
+              regions build, modernize, or strengthen their national or regional
+              biosafety and biosecurity systems to mitigate the risks of a
+              natural, accidental or deliberate release of biological agents. A
+              complete biosafety and biosecurity system encompasses a legal
+              structure that provides a mandate for an oversight program, along
+              with a policy framework, education and training, and a culture of
+              responsible conduct.
+            </p>
             <p class="lang" data-localize="1-2">The Analytical Approach:</p>
             <ul>
-                <li class="lang" data-localize="1-3">Is a modular and scalable policy analysis tool with a biosafety and biosecurity context</li>
-                <li class="lang" data-localize="1-4">Provides a structure for critical thinking that assists with defining country or region-specific issues and identifying feasible policy solutions to root causes</li>
-                <li class="lang" data-localize="1-5">Supports risk management for moderate and high-risk pathogens and toxins using safety and security lenses</li>
-                <li class="lang" data-localize="1-6">Includes practical guidance, an overview of common policy instruments, and options for combining them into a national program</li>
-                <li class="lang" data-localize="1-7">Assists officials to identify and prepare sound recommendations to decision-makers or donors</li>
+              <li class="lang" data-localize="1-3">
+                Is a modular and scalable policy analysis tool with a biosafety
+                and biosecurity context
+              </li>
+              <li class="lang" data-localize="1-4">
+                Provides a structure for critical thinking that assists with
+                defining country or region-specific issues and identifying
+                feasible policy solutions to root causes
+              </li>
+              <li class="lang" data-localize="1-5">
+                Supports risk management for moderate and high-risk pathogens
+                and toxins using safety and security lenses
+              </li>
+              <li class="lang" data-localize="1-6">
+                Includes practical guidance, an overview of common policy
+                instruments, and options for combining them into a national
+                program
+              </li>
+              <li class="lang" data-localize="1-7">
+                Assists officials to identify and prepare sound recommendations
+                to decision-makers or donors
+              </li>
             </ul>
-            <p class="lang" data-localize="1-8">Throughout, the Analytical Approach stresses the importance of outreach and engagement in an effort to get to know the various people and stakeholders that are implicated and including them in solutions, with a view to sustainability.</p>
-            <p class="lang" data-localize="1-9">The objective of any policy is to create a change in behaviour among a target population, and the Analytical Approach provides a process to identify the desired behavioural change and the tools to bring it about.</p>
-            
+            <p class="lang" data-localize="1-8">
+              Throughout, the Analytical Approach stresses the importance of
+              outreach and engagement in an effort to get to know the various
+              people and stakeholders that are implicated and including them in
+              solutions, with a view to sustainability.
+            </p>
+            <p class="lang" data-localize="1-9">
+              The objective of any policy is to create a change in behaviour
+              among a target population, and the Analytical Approach provides a
+              process to identify the desired behavioural change and the tools
+              to bring it about.
+            </p>
           </section>
 
-        <!-- Slide 2 - Learning Objectives -->   
-        <section id="page02" id="main" class="page" tabindex="-1" data-page>
-          
-          <h2 class="lang" data-localize="Title-2">Modules</h2>
-          
-          <p class="lang" data-localize="2-1">This course contains 9 modules and a final quiz. Each module is designed to be flexible and modular to enable countries or regions to enter the methodology at different points depending on their current state.</p>
+          <!-- Slide 2 - Learning Objectives -->
+          <section id="page02" id="main" class="page" tabindex="-1" data-page>
+            <h2 class="lang" data-localize="Title-2">Modules</h2>
 
-          <div class="rw">
-            <div class="cols">
-              <img src="./assets/img/identify-situation.jpg">
-            </div>
-            <div class="cols"> 
-            
-              <h3 class="lang" data-localize="2-2">Module 1: Identify the Current Situation</h3>
-              <p class="lang" data-localize="2-3">This module explains how to develop a picture of where, how, and who are using pathogens in your country or region, and what controls exist.</p>
-            
-            </div>
-          </div>
-          <div class="rw">
-            
-            <div class="cols"> 
-            
-              <h3 class="lang" data-localize="2-4">Module 2: Issue Identification, Risk Assessment, and Prioritization</h3>
-              <p class="lang" data-localize="2-5">This module explains how to go about the analysis of the situation and regulations in place – what works well, what does not work, who contributes to the issues, and where action needs to be taken.</p>
-            
-            </div>
-            <div class="cols">
-              <img src="./assets/img/risk-assesment.jpeg">
-            </div>
-          </div>
-          <div class="rw">
-            <div class="cols">
-              <img src="./assets/img/scope.jpeg">
-            </div>
-            <div class="cols"> 
-            
-              <h3 class="lang" data-localize="2-6">Module 3: Scope and Objectives for New System Components</h3>
-              <p class="lang" data-localize="2-7">This module explains how to make choices on what risks to address, how much impact the national biosafety and biosecurity system will have, and by when.</p>
-            
-            </div>
-          </div>
-          <div class="rw">
-            
-            <div class="cols"> 
-            
-              <h3 class="lang" data-localize="2-8">Module 4: Policy Instruments</h3>
-              <p class="lang" data-localize="2-9">This module provides an exploration of policy instruments, their pros and cons.</p>
-            
-            </div>
-            <div class="cols">
-              <img src="./assets/img/policy.jpeg">
-            </div>
-          </div>
-          <div class="rw">
-            <div class="cols">
-              <img src="./assets/img/combine.jpeg">
-            </div>
-            <div class="cols"> 
-            
-              <h3 class="lang" data-localize="2-10">Module 5: Combine Policy Instruments into National System Options</h3>
-              <p class="lang" data-localize="2-11">This module explains how to combine policy instruments into coherent national oversight system options.</p>
-            
-            </div>
-          </div>
-          <div class="rw">
-            
-            <div class="cols"> 
-            
-              <h3 class="lang" data-localize="2-12">Module 6: Implementation Approach</h3>
-              <p class="lang" data-localize="2-13">This module provides considerations on how your framework might be set up in your country/region and the role that senior decision-makers have in this process.</p>
-            
-            </div>
-            <div class="cols">
-              <img src="./assets/img/implement.jpeg">
-            </div>
-          </div>
-          <div class="rw">
-            <div class="cols">
-              <img src="./assets/img/business-evaluation.jpeg">
-            </div>
-            <div class="cols"> 
-            
-              <h3 class="lang" data-localize="2-14">Module 7: Performance Measurement and Evaluation</h3>
-              <p class="lang" data-localize="2-15">This module explains how you can assess the impact of your final framework.</p>
-            
-            </div>
-          </div>
-          <div class="rw">
-            
-            <div class="cols"> 
-            
-              <h3 class="lang" data-localize="2-16">Module 8: Stakeholder Engagement</h3>
-              <p class="lang" data-localize="2-17">This module explains how you can consult with those who will be impacted by your framework to increase the chances that what you develop will be realistic, practical, and accepted.</p>
-            
-            </div>
-            <div class="cols">
-              <img src="./assets/img/stakeholder.jpeg">
-            </div>
-          </div>
-          <div class="rw">
-            <div class="cols">
-              <img src="./assets/img/international.jpeg">
-            </div>
-            <div class="cols"> 
-            
-              <h3 class="lang" data-localize="2-18">Module 9: International Comparison</h3>
-              <p class="lang" data-localize="2-19">This module explains how to identify frameworks already in place that may work in your country/region (e.g., for ideas and to assess draft framework).</p>
-            
-            </div>
-          </div>
+            <p class="lang" data-localize="2-1">
+              This course contains 9 modules and a final quiz. Each module is
+              designed to be flexible and modular to enable countries or regions
+              to enter the methodology at different points depending on their
+              current state.
+            </p>
 
-        </section>
+            <div class="rw">
+              <div class="cols">
+                <img src="./assets/img/identify-situation.jpg" />
+              </div>
+              <div class="cols">
+                <h3 class="lang" data-localize="2-2">
+                  Module 1: Identify the Current Situation
+                </h3>
+                <p class="lang" data-localize="2-3">
+                  This module explains how to develop a picture of where, how,
+                  and who are using pathogens in your country or region, and
+                  what controls exist.
+                </p>
+              </div>
+            </div>
+            <div class="rw">
+              <div class="cols">
+                <h3 class="lang" data-localize="2-4">
+                  Module 2: Issue Identification, Risk Assessment, and
+                  Prioritization
+                </h3>
+                <p class="lang" data-localize="2-5">
+                  This module explains how to go about the analysis of the
+                  situation and regulations in place – what works well, what
+                  does not work, who contributes to the issues, and where action
+                  needs to be taken.
+                </p>
+              </div>
+              <div class="cols">
+                <img src="./assets/img/risk-assesment.jpeg" />
+              </div>
+            </div>
+            <div class="rw">
+              <div class="cols">
+                <img src="./assets/img/scope.jpeg" />
+              </div>
+              <div class="cols">
+                <h3 class="lang" data-localize="2-6">
+                  Module 3: Scope and Objectives for New System Components
+                </h3>
+                <p class="lang" data-localize="2-7">
+                  This module explains how to make choices on what risks to
+                  address, how much impact the national biosafety and
+                  biosecurity system will have, and by when.
+                </p>
+              </div>
+            </div>
+            <div class="rw">
+              <div class="cols">
+                <h3 class="lang" data-localize="2-8">
+                  Module 4: Policy Instruments
+                </h3>
+                <p class="lang" data-localize="2-9">
+                  This module provides an exploration of policy instruments,
+                  their pros and cons.
+                </p>
+              </div>
+              <div class="cols">
+                <img src="./assets/img/policy.jpeg" />
+              </div>
+            </div>
+            <div class="rw">
+              <div class="cols">
+                <img src="./assets/img/combine.jpeg" />
+              </div>
+              <div class="cols">
+                <h3 class="lang" data-localize="2-10">
+                  Module 5: Combine Policy Instruments into National System
+                  Options
+                </h3>
+                <p class="lang" data-localize="2-11">
+                  This module explains how to combine policy instruments into
+                  coherent national oversight system options.
+                </p>
+              </div>
+            </div>
+            <div class="rw">
+              <div class="cols">
+                <h3 class="lang" data-localize="2-12">
+                  Module 6: Implementation Approach
+                </h3>
+                <p class="lang" data-localize="2-13">
+                  This module provides considerations on how your framework
+                  might be set up in your country/region and the role that
+                  senior decision-makers have in this process.
+                </p>
+              </div>
+              <div class="cols">
+                <img src="./assets/img/implement.jpeg" />
+              </div>
+            </div>
+            <div class="rw">
+              <div class="cols">
+                <img src="./assets/img/business-evaluation.jpeg" />
+              </div>
+              <div class="cols">
+                <h3 class="lang" data-localize="2-14">
+                  Module 7: Performance Measurement and Evaluation
+                </h3>
+                <p class="lang" data-localize="2-15">
+                  This module explains how you can assess the impact of your
+                  final framework.
+                </p>
+              </div>
+            </div>
+            <div class="rw">
+              <div class="cols">
+                <h3 class="lang" data-localize="2-16">
+                  Module 8: Stakeholder Engagement
+                </h3>
+                <p class="lang" data-localize="2-17">
+                  This module explains how you can consult with those who will
+                  be impacted by your framework to increase the chances that
+                  what you develop will be realistic, practical, and accepted.
+                </p>
+              </div>
+              <div class="cols">
+                <img src="./assets/img/stakeholder.jpeg" />
+              </div>
+            </div>
+            <div class="rw">
+              <div class="cols">
+                <img src="./assets/img/international.jpeg" />
+              </div>
+              <div class="cols">
+                <h3 class="lang" data-localize="2-18">
+                  Module 9: International Comparison
+                </h3>
+                <p class="lang" data-localize="2-19">
+                  This module explains how to identify frameworks already in
+                  place that may work in your country/region (e.g., for ideas
+                  and to assess draft framework).
+                </p>
+              </div>
+            </div>
+          </section>
 
-       
-
-        <!-- Page Navigator -->
-        <nav data-pagination class="p-4">
-          <div class="flex justify-center items-center">
-            <a href="#" class="icon-button mr-2" data-prev-page>
-              <svg aria-hidden="true"><use href="#icon-page-prev" xlink:href="#icon-page-prev"/></svg>
-              <span class="  visually-hidden">Previous</span>
+          <!-- Page Navigator -->
+          <nav data-pagination class="p-4">
+            <div class="flex justify-center items-center">
+              <a href="#" class="icon-button mr-2" data-prev-page>
+                <svg aria-hidden="true">
+                  <use href="#icon-page-prev" xlink:href="#icon-page-prev" />
+                </svg>
+                <span class="visually-hidden">Previous</span>
               </a>
-            <span data-pager></span>
-            <a href="#" class="icon-button ml-2" data-next-page>
-              <span class="  visually-hidden">Next</span>
-              <svg aria-hidden="true"><use href="#icon-page-next" xlink:href="#icon-page-next"/></svg>
-            </a>
-          </div>
-        </nav>
-      </div>
+              <span data-pager></span>
+              <a href="#" class="icon-button ml-2" data-next-page>
+                <span class="visually-hidden">Next</span>
+                <svg aria-hidden="true">
+                  <use href="#icon-page-next" xlink:href="#icon-page-next" />
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </main>
+      <a href="#" class="icon-button return-top" data-page-top>
+        <svg aria-hidden="true">
+          <use href="#icon-page-top" xlink:href="#icon-page-top" />
+        </svg>
+        <span class="visually-hidden">Back to top</span>
+      </a>
+    </div>
+    <svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path
+          d="M23 3.2L20.8 1 12 9.8 3.2 1 1 3.2 9.8 12 1 20.8 3.2 23l8.8-8.8 8.8 8.8 2.2-2.2-8.8-8.8z"
+        />
+      </symbol>
+      <symbol id="icon-toc" viewBox="0 0 24 24">
+        <path
+          d="M1 19.3h22v-2.4H1v2.4zm0-6.1h22v-2.4H1v2.4zm0-8.5v2.4h22V4.7H1z"
+        />
+      </symbol>
+      <symbol id="icon-page-next" viewBox="0 0 24 24">
+        <path d="M4 1h6l10 11-10 11H4l10-11z" />
+      </symbol>
+      <symbol id="icon-page-prev" viewBox="0 0 24 24">
+        <path d="M14 1h6L10 12l10 11h-6L4 12z" />
+      </symbol>
+      <symbol id="icon-page-top" viewBox="0 0 24 24">
+        <path d="M23 14v6L12 10 1 20v-6L12 4l11 10z" />
+      </symbol>
+      <symbol id="icon-carousel-next" viewBox="0 0 24 24">
+        <path d="M4 1h6l10 11-10 11H4l10-11z" />
+      </symbol>
+      <symbol id="icon-carousel-prev" viewBox="0 0 24 24">
+        <path d="M14 1h6L10 12l10 11h-6L4 12z" />
+      </symbol>
+      <symbol id="icon-incorrect" viewBox="0 0 24 24">
+        <path
+          d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0zm0 21.6a9.6 9.6 0 1 1 9.6-9.6 9.6 9.6 0 0 1-9.6 9.6zM16.3 6L12 10.3 7.7 6 6 7.7l4.3 4.3L6 16.3 7.7 18l4.3-4.3 4.3 4.3 1.7-1.7-4.3-4.3L18 7.7z"
+        />
+      </symbol>
+      <symbol id="icon-correct" viewBox="0 0 24 24">
+        <path
+          d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0zm0 21.6a9.6 9.6 0 1 1 9.6-9.6 9.6 9.6 0 0 1-9.6 9.6zm5.5-14.9l-7.9 7.9-3.1-3.1-1.7 1.7L9.6 18l9.6-9.6z"
+        />
+      </symbol>
+    </svg>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/translate.js"></script>
+    <script src="./assets/css/main.css"></script>
+    <script src="assets/js/scormwrapper.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
-    </main>
-    <a href="#" class="icon-button return-top" data-page-top>
-      <svg aria-hidden="true"><use href="#icon-page-top" xlink:href="#icon-page-top"/></svg>
-      <span class="visually-hidden">Back to top</span>
-    </a>
-  </div>
-  <svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="icon-close" viewBox="0 0 24 24">
-      <path d="M23 3.2L20.8 1 12 9.8 3.2 1 1 3.2 9.8 12 1 20.8 3.2 23l8.8-8.8 8.8 8.8 2.2-2.2-8.8-8.8z"/>
-    </symbol>
-    <symbol id="icon-toc" viewBox="0 0 24 24">
-      <path d="M1 19.3h22v-2.4H1v2.4zm0-6.1h22v-2.4H1v2.4zm0-8.5v2.4h22V4.7H1z"/>
-    </symbol>
-    <symbol id="icon-page-next" viewBox="0 0 24 24">
-      <path d="M4 1h6l10 11-10 11H4l10-11z"/>
-    </symbol>
-    <symbol id="icon-page-prev" viewBox="0 0 24 24">
-      <path d="M14 1h6L10 12l10 11h-6L4 12z"/>
-    </symbol>
-    <symbol id="icon-page-top" viewBox="0 0 24 24">
-      <path d="M23 14v6L12 10 1 20v-6L12 4l11 10z"/>
-    </symbol>
-    <symbol id="icon-carousel-next" viewBox="0 0 24 24">
-      <path d="M4 1h6l10 11-10 11H4l10-11z"/>
-    </symbol>
-    <symbol id="icon-carousel-prev" viewBox="0 0 24 24">
-      <path d="M14 1h6L10 12l10 11h-6L4 12z"/>
-    </symbol>
-    <symbol id="icon-incorrect" viewBox="0 0 24 24">
-      <path d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0zm0 21.6a9.6 9.6 0 1 1 9.6-9.6 9.6 9.6 0 0 1-9.6 9.6zM16.3 6L12 10.3 7.7 6 6 7.7l4.3 4.3L6 16.3 7.7 18l4.3-4.3 4.3 4.3 1.7-1.7-4.3-4.3L18 7.7z"/>
-    </symbol>
-    <symbol id="icon-correct" viewBox="0 0 24 24">
-      <path d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0zm0 21.6a9.6 9.6 0 1 1 9.6-9.6 9.6 9.6 0 0 1-9.6 9.6zm5.5-14.9l-7.9 7.9-3.1-3.1-1.7 1.7L9.6 18l9.6-9.6z"/>
-    </symbol>
-  </svg>
-      <script src="./assets/js/main.js"></script>
-      <script src="./assets/js/translate.js"></script>
-      <script src="./assets/css/main.css"></script>
-      <script src="assets/js/scormwrapper.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Start SCORM script block -->
+    <!-- Remove this "script" block if not used in LMS -->
+    <script>
+      (function () {
+        "use strict";
 
+        function clickCompleteHandler(event) {
+          this.dispatchEvent(
+            new CustomEvent("scormCompleted", {
+              bubbles: true,
+            })
+          );
+        }
 
-  <!-- Start SCORM script block --> 
-  <!-- Remove this "script" block if not used in LMS -->
-  <script>
-    (function() {
-      'use strict';
-
-      function clickCompleteHandler(event) {
-        this.dispatchEvent(new CustomEvent('scormCompleted', {
-          bubbles: true
-        }));
-      }
-
-      document.getElementById('lesson-complete').addEventListener('click', clickCompleteHandler);
-
-    })();
-  </script>
-      
+        document
+          .getElementById("lesson-complete")
+          .addEventListener("click", clickCompleteHandler);
+      })();
+    </script>
   </body>
-    
 </html>
